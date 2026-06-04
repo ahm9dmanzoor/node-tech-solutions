@@ -1,16 +1,15 @@
-NodeTech Solutions Website — Updated Package
+NodeTech Solutions website package
 
-Pages included:
+Updated in this version:
+- Replaced site logo with the user-provided NTS mark (added white and black optimized assets).
+- Redesigned the repeated call-to-action section with a more elegant branded layout.
+- Applied a premium frontend polish to header, service cards, contact/form surfaces, footer, and mobile CTA behaviour.
+- Kept the previous full-width Global Impact and full-width Contact map changes.
+
+Files included:
 - index.html
-- services.html
 - about.html
+- services.html
 - contact.html
-
-Latest continuation changes applied:
-1. Global Impact section on homepage is widened/full-width up to 1600px with better spacing.
-2. Contact page Google Map is full-width edge-to-edge above the footer.
-3. Services page has been redesigned into an elegant card grid with all 11 services.
-4. Heavy service-row images were removed from services.html to make the page much lighter.
-5. Mobile responsiveness pass added for buttons, images, hero elements, contact form rows, service cards, and map sizing.
-
-Note: The Google Map iframe requires internet access and will load normally on a live website. In offline/sandbox previews it can appear blank.
+- assets/nts-logo-black.png
+- assets/nts-logo-white.png
