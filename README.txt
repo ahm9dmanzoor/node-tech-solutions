@@ -1,10 +1,9 @@
-NodeTech Solutions website package
+NodeTech Solutions minimal corrected package
 
-Refinement pass completed:
-- Service cards redesigned again with cleaner white premium cards.
-- CTA sections simplified and logo removed.
-- Header/footer switched to transparent black logo asset.
-- Case study cards improved.
-- Global Impact section redesigned with stronger layout, stat cards, and visual polish.
-- Header navigation aligned to the left of the CTA button.
-- Overall frontend given a more lively premium look.
+This version rolls back the over-designed changes and applies only requested fixes:
+- Supplied black transparent NTS logo added to header/footer.
+- CTA icon/logo removed from CTA sections.
+- Header nav aligned beside the CTA button.
+- Services card readability corrected without redesigning the whole section.
+- Case-study cards lightly improved.
+- Global Impact spacing/stat readability lightly improved.
