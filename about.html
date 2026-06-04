@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
 <html lang="en"><head>
 <meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>About Us — NodeTech Solutions</title><meta content="Learn about NodeTech Solutions, a Dublin-based full-service software partner." name="description"/>
@@ -737,11 +743,293 @@ footer .brand-logo{height:52px !important}
     justify-content:center !important;
   }
 }
+
+
+/* ===== focused correction pass ===== */
+/* white logo in header/footer */
+.brand-logo{height:52px !important;width:auto !important;object-fit:contain !important;filter:drop-shadow(0 2px 10px rgba(255,255,255,.10)) !important}
+footer .brand-logo{height:54px !important}
+
+/* services section improved */
+.services-catalog .section-head h2{margin-bottom:12px !important}
+.service-card-grid{gap:26px !important}
+.service-card{
+  background:linear-gradient(180deg,#ffffff 0%,#f7fbff 100%) !important;
+  border:1px solid #d9e5f2 !important;
+  border-radius:20px !important;
+  padding:28px !important;
+  box-shadow:0 18px 44px -34px rgba(15,23,42,.22) !important;
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease !important;
+  position:relative;overflow:hidden;
+}
+.service-card::before{
+  content:"";position:absolute;left:0;top:0;width:100%;height:4px;
+  background:linear-gradient(90deg,var(--teal),#77ead8,var(--amber));
+}
+.service-card:hover{
+  transform:translateY(-6px) !important;
+  box-shadow:0 24px 52px -32px rgba(15,23,42,.28) !important;
+  border-color:#c3d8ea !important;
+}
+.service-card-top{margin-bottom:18px !important;align-items:flex-start !important}
+.service-icon{
+  width:58px !important;height:58px !important;border-radius:16px !important;
+  background:linear-gradient(180deg,#e9fbf8 0%,#def6f2 100%) !important;
+  border:1px solid #bde9e0 !important;
+  box-shadow:none !important;
+}
+.service-icon svg{stroke:var(--teal-ink) !important;stroke-width:1.9 !important}
+.service-number{color:#8ba1b9 !important;font-weight:800 !important;font-size:20px !important;letter-spacing:.08em !important}
+.service-card h3{
+  color:#10213b !important;
+  font-size:32px !important;
+  line-height:1.08 !important;
+  letter-spacing:-.02em !important;
+  margin:0 0 14px !important;
+}
+.service-card p{
+  color:#61748b !important;
+  font-size:16px !important;
+  line-height:1.7 !important;
+  margin-bottom:20px !important;
+}
+.service-points{gap:8px !important;flex-wrap:wrap !important}
+.service-points span{
+  background:#eef4fa !important;
+  border:1px solid #d8e3ee !important;
+  color:#334155 !important;
+  font-weight:700 !important;
+  border-radius:999px !important;
+  padding:8px 12px !important;
+}
+
+/* CTA little improvement only */
+.cta-box{
+  border:1px solid rgba(45,212,191,.18) !important;
+  box-shadow:0 18px 48px -34px rgba(0,0,0,.45) !important;
+}
+.cta-left h2{font-size:clamp(30px,3vw,42px) !important;line-height:1.08 !important}
+.cta-left p{color:#cfdeee !important;font-size:17px !important;line-height:1.65 !important}
+.cta-box .btn{border-radius:14px !important}
+.cta-box .btn.btn-teal{box-shadow:0 10px 24px -12px rgba(45,212,191,.62) !important}
+
+@media (max-width:900px){
+  .service-card h3{font-size:28px !important}
+}
+@media (max-width:600px){
+  .brand-logo{height:42px !important}
+  footer .brand-logo{height:46px !important}
+  .service-card{padding:22px !important}
+  .service-card h3{font-size:24px !important}
+  .service-card p{font-size:15px !important}
+}
+
+
+/* ===== CTA + meaningful hover fixes ===== */
+
+/* Preferred CTA style */
+.finalcta{
+  padding:42px 0 96px !important;
+}
+.cta-box{
+  position:relative !important;
+  overflow:hidden !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  gap:32px !important;
+  padding:38px 44px !important;
+  min-height:158px !important;
+  border-radius:26px !important;
+  background:
+    radial-gradient(circle at 86% 14%, rgba(45,212,191,.13), transparent 28%),
+    linear-gradient(135deg, #0b1a31 0%, #102b49 58%, #0e3653 100%) !important;
+  border:1px solid rgba(45,212,191,.35) !important;
+  box-shadow:0 22px 58px -36px rgba(0,0,0,.62), inset 0 1px 0 rgba(255,255,255,.06) !important;
+  transition:transform .28s ease, box-shadow .28s ease, border-color .28s ease !important;
+}
+.cta-box::before{
+  content:"" !important;
+  position:absolute !important;
+  inset:0 !important;
+  background-image:
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px) !important;
+  background-size:28px 28px !important;
+  opacity:.36 !important;
+  pointer-events:none !important;
+}
+.cta-box:hover{
+  transform:translateY(-4px) !important;
+  border-color:rgba(69,230,208,.55) !important;
+  box-shadow:0 30px 72px -40px rgba(0,0,0,.72), 0 0 0 1px rgba(45,212,191,.08) inset !important;
+}
+.cta-blob,
+.cta-orbit,
+.cta-rocket,
+.cta-badge{
+  display:none !important;
+}
+.cta-left{
+  position:relative !important;
+  z-index:1 !important;
+  display:block !important;
+}
+.cta-left h2{
+  margin:0 0 10px !important;
+  color:#ffffff !important;
+  font-size:clamp(32px,3.5vw,44px) !important;
+  line-height:1.08 !important;
+  letter-spacing:-.03em !important;
+}
+.cta-left p{
+  margin:0 !important;
+  max-width:650px !important;
+  color:#d2deea !important;
+  font-size:17px !important;
+  line-height:1.65 !important;
+}
+.cta-box > .btn,
+.cta-box .cta-main-btn{
+  position:relative !important;
+  z-index:1 !important;
+  flex:0 0 auto !important;
+  min-width:176px !important;
+  justify-content:center !important;
+  padding:16px 28px !important;
+  border-radius:13px !important;
+  background:linear-gradient(135deg, #45e6d0, #2dd4bf) !important;
+  color:#05231f !important;
+  box-shadow:0 16px 32px -18px rgba(45,212,191,.75) !important;
+}
+.cta-box > .btn:hover,
+.cta-box .cta-main-btn:hover{
+  transform:translateY(-3px) !important;
+  box-shadow:0 24px 42px -20px rgba(45,212,191,.85) !important;
+}
+.cta-box > .btn:hover svg,
+.cta-box .cta-main-btn:hover svg{
+  transform:translateX(5px) !important;
+}
+
+/* Meaningful hover states */
+.nav-links a{
+  transition:color .22s ease, transform .22s ease !important;
+}
+.nav-links a:hover{
+  transform:translateY(-1px) !important;
+}
+.brand-logo{
+  transition:transform .24s ease, filter .24s ease !important;
+}
+.brand:hover .brand-logo{
+  transform:translateY(-2px) scale(1.03) !important;
+  filter:drop-shadow(0 6px 14px rgba(255,255,255,.16)) !important;
+}
+
+.service-card{
+  transition:transform .28s ease, box-shadow .28s ease, border-color .28s ease !important;
+}
+.service-card:hover{
+  transform:translateY(-7px) !important;
+}
+.service-card:hover .service-icon{
+  transform:translateY(-3px) scale(1.04) !important;
+  border-color:rgba(45,212,191,.45) !important;
+}
+.service-icon{
+  transition:transform .24s ease, border-color .24s ease, box-shadow .24s ease, background .24s ease !important;
+}
+.service-points span{
+  cursor:pointer !important;
+  transition:transform .22s ease, background .22s ease, color .22s ease, border-color .22s ease, box-shadow .22s ease !important;
+}
+.service-points span:hover{
+  transform:translateY(-3px) !important;
+  background:linear-gradient(135deg, rgba(45,212,191,.18), rgba(45,212,191,.08)) !important;
+  color:#0f766e !important;
+  border-color:rgba(45,212,191,.42) !important;
+  box-shadow:0 10px 22px -16px rgba(15,118,110,.5) !important;
+}
+
+.case-card{
+  transition:transform .28s ease, box-shadow .28s ease, border-color .28s ease !important;
+}
+.case-card:hover{
+  transform:translateY(-7px) !important;
+}
+.case-card img{
+  transition:transform .42s ease, filter .42s ease !important;
+}
+.case-card:hover img{
+  transform:scale(1.035) !important;
+  filter:saturate(1.08) contrast(1.04) !important;
+}
+.case-tag{
+  transition:transform .22s ease, background .22s ease, border-color .22s ease !important;
+}
+.case-card:hover .case-tag{
+  transform:translateY(-2px) !important;
+  background:rgba(45,212,191,.16) !important;
+  border-color:rgba(45,212,191,.45) !important;
+}
+
+.imp-stat,
+.value,
+.contact-card,
+.card,
+.quote{
+  transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease !important;
+}
+.imp-stat:hover,
+.value:hover,
+.contact-card:hover,
+.card:hover,
+.quote:hover{
+  transform:translateY(-5px) !important;
+  border-color:rgba(45,212,191,.26) !important;
+}
+
+footer a{
+  transition:color .22s ease, transform .22s ease !important;
+}
+footer a:hover{
+  transform:translateX(3px) !important;
+}
+
+/* Mobile */
+@media (max-width:900px){
+  .cta-box{
+    flex-direction:column !important;
+    align-items:flex-start !important;
+    padding:30px 24px !important;
+  }
+  .cta-box > .btn,
+  .cta-box .cta-main-btn{
+    width:100% !important;
+  }
+}
+
+
+/* ===== remove hero scroll indicator ===== */
+.scroll-indicator,
+.scroll-cue,
+.scroll-down,
+.hero-scroll,
+.mouse-scroll,
+.scroll-mouse,
+.scroll-label,
+.scroll-hint{
+  display:none !important;
+  visibility:hidden !important;
+  opacity:0 !important;
+  pointer-events:none !important;
+}
 </style>
 </head><body>
 <div class="scroll-progress"></div>
 <header id="header"><div class="container nav">
-<a class="brand" href="index.html"><img alt="NTS logo" class="brand-logo" src="assets/nts-logo-black.png"/></a>
+<a class="brand" href="index.html"><img alt="NTS logo" class="brand-logo" src="assets/nts-logo-white.png"/></a>
 <nav><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a class="active" href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li></ul></nav>
 <div class="nav-cta">
 <a class="btn btn-primary" href="contact.html">Let's Talk<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
@@ -782,14 +1070,11 @@ footer .brand-logo{height:52px !important}
 <div class="s reveal" data-delay="3"><b data-count="98" data-suffix="%">98%</b><span>Client Satisfaction</span></div>
 <div class="s reveal" data-delay="4"><b data-count="5" data-suffix="+">5+</b><span>Years of Excellence</span></div>
 </div></div></section>
-<section class="finalcta"><div class="container"><div class="cta-box reveal">
-<span class="cta-blob b1"></span><span class="cta-blob b2"></span><div class="cta-orbit"><div class="ring"></div><div class="ring"></div><div class="ring"></div><span class="sat"></span><span class="sat s2"></span></div>
-<div class="cta-left"><div><h2>Let's Build the Future Together</h2><p>Ready to start your next project? We'd love to hear about it.</p></div></div>
-<a class="btn btn-teal" href="contact.html">Get in Touch<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></div></div></section>
+<section class="finalcta"><div class="container"><div class="cta-box reveal"><div class="cta-left"><div><h2>Let's Build the Future Together</h2><p>Ready to start your next project? We'd love to hear about it.</p></div></div><a class="btn btn-teal cta-main-btn" href="contact.html">Get in Touch<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a></div></div></section>
 <footer><div class="container">
 <div class="foot-grid">
 <div class="foot-brand">
-<img alt="NTS logo" class="brand-logo" src="assets/nts-logo-black.png"/>
+<img alt="NTS logo" class="brand-logo" src="assets/nts-logo-white.png"/>
 <p>We help businesses innovate, scale, and succeed through custom software, modern technologies, and expert support.</p>
 <div class="socials">
 <a aria-label="LinkedIn" href="#"><svg fill="none" stroke-width="2" viewbox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect height="12" width="4" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
