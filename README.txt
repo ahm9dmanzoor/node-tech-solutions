@@ -1,15 +1,10 @@
 NodeTech Solutions website package
 
-Updated in this version:
-- Replaced site logo with the user-provided NTS mark (added white and black optimized assets).
-- Redesigned the repeated call-to-action section with a more elegant branded layout.
-- Applied a premium frontend polish to header, service cards, contact/form surfaces, footer, and mobile CTA behaviour.
-- Kept the previous full-width Global Impact and full-width Contact map changes.
-
-Files included:
-- index.html
-- about.html
-- services.html
-- contact.html
-- assets/nts-logo-black.png
-- assets/nts-logo-white.png
+Refinement pass completed:
+- Service cards redesigned again with cleaner white premium cards.
+- CTA sections simplified and logo removed.
+- Header/footer switched to transparent black logo asset.
+- Case study cards improved.
+- Global Impact section redesigned with stronger layout, stat cards, and visual polish.
+- Header navigation aligned to the left of the CTA button.
+- Overall frontend given a more lively premium look.
