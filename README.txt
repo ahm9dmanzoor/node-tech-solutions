@@ -1,5 +1,5 @@
-NodeTech Solutions scroll indicator removed
+Node Tech Solutions homepage example note removed
 
-Change:
-- Removed/hidden the SCROLL mouse indicator from the website.
-- No other design changes were made.
+Changed:
+- Removed the line: These are example solution formats until solution scenarios and permission-approved screenshots are added.
+- No other UI/UX or content changes were made.
