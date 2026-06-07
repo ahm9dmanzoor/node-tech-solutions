@@ -13,39 +13,69 @@
     <priority>0.95</priority>
   </url>
   <url>
+    <loc>https://nodetechsolutions.com/about.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://nodetechsolutions.com/contact.html</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://nodetechsolutions.com/about.html</loc>
+    <loc>https://nodetechsolutions.com/blog.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://nodetechsolutions.com/blog-website-redesign-irish-smes.html</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://nodetechsolutions.com/blog-wordpress-maintenance-security.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://nodetechsolutions.com/blog-cybersecurity-basics-irish-smes.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://nodetechsolutions.com/blog-custom-software-automation.html</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://nodetechsolutions.com/case-studies.html</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.55</priority>
+    <priority>0.35</priority>
   </url>
   <url>
     <loc>https://nodetechsolutions.com/privacy.html</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.25</priority>
+    <priority>0.30</priority>
   </url>
   <url>
     <loc>https://nodetechsolutions.com/terms.html</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.25</priority>
+    <priority>0.30</priority>
   </url>
   <url>
     <loc>https://nodetechsolutions.com/cookie-policy.html</loc>
     <lastmod>2026-06-07</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.25</priority>
+    <priority>0.30</priority>
   </url>
 </urlset>
