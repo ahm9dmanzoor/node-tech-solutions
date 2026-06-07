@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 
+<!DOCTYPE html>
+
 <html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Terms of Service | Node Tech Solutions</title><meta content="Read the Node Tech Solutions Terms of Service for website, software, e-commerce, IT support, cybersecurity, maintenance and consulting services." name="description"/><link href="https://nodetechsolutions.com/terms.html" rel="canonical"/><meta content="Node Tech Solutions, Dublin website development, Ireland software development, IT support Dublin, cybersecurity for SMEs Ireland" name="keywords"/><meta content="Terms of Service | Node Tech Solutions" property="og:title"/><meta content="Read the Node Tech Solutions Terms of Service for website, software, e-commerce, IT support, cybersecurity, maintenance and consulting services." property="og:description"/><meta content="website" property="og:type"/><meta content="https://nodetechsolutions.com/terms.html" property="og:url"/><meta content="summary_large_image" name="twitter:card"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><style>:root{
  --navy-985:#000617; --navy-950:#08111f; --navy-900:#0a1628; --navy-850:#0d1d33; --navy-800:#102540;
  --navy-700:#16304f; --navy-border:#1d3a5f;
@@ -1826,6 +1828,98 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .blog-image{height:220px !important;}
   .article-hero-image{height:240px !important;}
   .article-content{padding:28px !important;}
+}
+
+
+/* ===== BLOG CARD DATE LAYOUT FIX ===== */
+.blog-card .blog-meta{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  flex-wrap:wrap !important;
+  gap:8px 10px !important;
+  margin-bottom:14px !important;
+}
+
+.blog-card .blog-meta > span:not(.blog-date){
+  display:inline-flex !important;
+  align-items:center !important;
+  width:auto !important;
+  max-width:100% !important;
+  min-height:34px !important;
+  padding:7px 13px !important;
+  border-radius:999px !important;
+  background:#e8fbf7 !important;
+  border:1px solid #bde9e0 !important;
+  color:#0d9488 !important;
+  font-size:11px !important;
+  line-height:1.25 !important;
+  font-weight:900 !important;
+  letter-spacing:.08em !important;
+  text-transform:uppercase !important;
+  white-space:normal !important;
+}
+
+.blog-card .blog-date{
+  display:inline-flex !important;
+  align-items:center !important;
+  gap:7px !important;
+  width:auto !important;
+  min-width:0 !important;
+  min-height:auto !important;
+  padding:0 !important;
+  border:0 !important;
+  border-radius:0 !important;
+  background:transparent !important;
+  color:#64748b !important;
+  font-size:12px !important;
+  line-height:1 !important;
+  font-weight:800 !important;
+  letter-spacing:0 !important;
+  text-transform:none !important;
+  white-space:nowrap !important;
+  box-shadow:none !important;
+}
+
+.blog-card .blog-date::before{
+  content:"" !important;
+  width:6px !important;
+  height:6px !important;
+  flex:0 0 6px !important;
+  border-radius:999px !important;
+  background:#2dd4bf !important;
+  box-shadow:0 0 0 3px rgba(45,212,191,.12) !important;
+}
+
+.blog-card .blog-meta small{
+  display:inline-flex !important;
+  align-items:center !important;
+  width:auto !important;
+  max-width:none !important;
+  min-width:0 !important;
+  color:#8ba0b6 !important;
+  font-size:12px !important;
+  line-height:1 !important;
+  font-weight:800 !important;
+  white-space:nowrap !important;
+  overflow:visible !important;
+  text-overflow:clip !important;
+}
+
+@media(max-width:1180px){
+  .blog-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+}
+
+@media(max-width:760px){
+  .blog-grid,
+  .blog-listing-grid{
+    grid-template-columns:1fr !important;
+  }
+  .blog-card .blog-meta{
+    gap:8px 12px !important;
+  }
 }
 </style><meta content="Read the Node Tech Solutions Terms of Service for website, software, e-commerce, IT support, cybersecurity, maintenance and consulting services." name="twitter:description"/><meta content="Terms of Service | Node Tech Solutions" name="twitter:title"/></head><body class="legal-page"><a class="skip-link" href="#main">Skip to content</a><header id="header"><div class="container nav">
 <a class="brand" href="index.html"><img alt="Node Tech Solutions logo" class="brand-logo" src="assets/nts-logo-white.png"/></a>

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 
+<!DOCTYPE html>
+
 <html lang="en"><head>
 <meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>About Node Tech Solutions | Irish Website, Software &amp; IT Partner</title><meta content="Learn about Node Tech Solutions, a Dublin-based technology partner helping Irish businesses with websites, software, IT support, cybersecurity and practical digital growth." name="description"/>
@@ -1821,6 +1823,98 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .blog-image{height:220px !important;}
   .article-hero-image{height:240px !important;}
   .article-content{padding:28px !important;}
+}
+
+
+/* ===== BLOG CARD DATE LAYOUT FIX ===== */
+.blog-card .blog-meta{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  flex-wrap:wrap !important;
+  gap:8px 10px !important;
+  margin-bottom:14px !important;
+}
+
+.blog-card .blog-meta > span:not(.blog-date){
+  display:inline-flex !important;
+  align-items:center !important;
+  width:auto !important;
+  max-width:100% !important;
+  min-height:34px !important;
+  padding:7px 13px !important;
+  border-radius:999px !important;
+  background:#e8fbf7 !important;
+  border:1px solid #bde9e0 !important;
+  color:#0d9488 !important;
+  font-size:11px !important;
+  line-height:1.25 !important;
+  font-weight:900 !important;
+  letter-spacing:.08em !important;
+  text-transform:uppercase !important;
+  white-space:normal !important;
+}
+
+.blog-card .blog-date{
+  display:inline-flex !important;
+  align-items:center !important;
+  gap:7px !important;
+  width:auto !important;
+  min-width:0 !important;
+  min-height:auto !important;
+  padding:0 !important;
+  border:0 !important;
+  border-radius:0 !important;
+  background:transparent !important;
+  color:#64748b !important;
+  font-size:12px !important;
+  line-height:1 !important;
+  font-weight:800 !important;
+  letter-spacing:0 !important;
+  text-transform:none !important;
+  white-space:nowrap !important;
+  box-shadow:none !important;
+}
+
+.blog-card .blog-date::before{
+  content:"" !important;
+  width:6px !important;
+  height:6px !important;
+  flex:0 0 6px !important;
+  border-radius:999px !important;
+  background:#2dd4bf !important;
+  box-shadow:0 0 0 3px rgba(45,212,191,.12) !important;
+}
+
+.blog-card .blog-meta small{
+  display:inline-flex !important;
+  align-items:center !important;
+  width:auto !important;
+  max-width:none !important;
+  min-width:0 !important;
+  color:#8ba0b6 !important;
+  font-size:12px !important;
+  line-height:1 !important;
+  font-weight:800 !important;
+  white-space:nowrap !important;
+  overflow:visible !important;
+  text-overflow:clip !important;
+}
+
+@media(max-width:1180px){
+  .blog-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+}
+
+@media(max-width:760px){
+  .blog-grid,
+  .blog-listing-grid{
+    grid-template-columns:1fr !important;
+  }
+  .blog-card .blog-meta{
+    gap:8px 12px !important;
+  }
 }
 </style>
 <meta content="Node Tech Solutions, Dublin website development, Ireland software development, IT support Dublin, cybersecurity for SMEs Ireland, e-commerce development Ireland" name="keywords"/><link href="https://nodetechsolutions.com/about.html" rel="canonical"/><meta content="About Node Tech Solutions | Irish Website, Software &amp; IT Partner" property="og:title"/><meta content="Learn about Node Tech Solutions, a Dublin-based technology partner helping Irish businesses with websites, software, IT support, cybersecurity and practical digital growth." property="og:description"/><meta content="website" property="og:type"/><meta content="https://nodetechsolutions.com/about.html" property="og:url"/><meta content="summary_large_image" name="twitter:card"/><meta content="About Node Tech Solutions | Irish Website, Software &amp; IT Partner" name="twitter:title"/><meta content="Learn about Node Tech Solutions, a Dublin-based technology partner helping Irish businesses with websites, software, IT support, cybersecurity and practical digital growth." name="twitter:description"/></head><body><a class="skip-link" href="#main">Skip to content</a>

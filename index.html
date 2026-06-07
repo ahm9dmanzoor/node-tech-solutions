@@ -3,6 +3,8 @@
 
 <!DOCTYPE html>
 
+<!DOCTYPE html>
+
 <html lang="en"><head>
 <meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Node Tech Solutions | Website, Software &amp; IT Support Ireland</title><meta content="Node Tech Solutions helps Irish SMEs with websites, WordPress, e-commerce, custom software, IT support, cybersecurity audits, SEO and ongoing digital support." name="description"/>
@@ -2680,6 +2682,98 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .blog-page .blog-listing-section,
   .blog-page .blog-article-section{
     padding-top:128px !important;
+  }
+}
+
+
+/* ===== BLOG CARD DATE LAYOUT FIX ===== */
+.blog-card .blog-meta{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  flex-wrap:wrap !important;
+  gap:8px 10px !important;
+  margin-bottom:14px !important;
+}
+
+.blog-card .blog-meta > span:not(.blog-date){
+  display:inline-flex !important;
+  align-items:center !important;
+  width:auto !important;
+  max-width:100% !important;
+  min-height:34px !important;
+  padding:7px 13px !important;
+  border-radius:999px !important;
+  background:#e8fbf7 !important;
+  border:1px solid #bde9e0 !important;
+  color:#0d9488 !important;
+  font-size:11px !important;
+  line-height:1.25 !important;
+  font-weight:900 !important;
+  letter-spacing:.08em !important;
+  text-transform:uppercase !important;
+  white-space:normal !important;
+}
+
+.blog-card .blog-date{
+  display:inline-flex !important;
+  align-items:center !important;
+  gap:7px !important;
+  width:auto !important;
+  min-width:0 !important;
+  min-height:auto !important;
+  padding:0 !important;
+  border:0 !important;
+  border-radius:0 !important;
+  background:transparent !important;
+  color:#64748b !important;
+  font-size:12px !important;
+  line-height:1 !important;
+  font-weight:800 !important;
+  letter-spacing:0 !important;
+  text-transform:none !important;
+  white-space:nowrap !important;
+  box-shadow:none !important;
+}
+
+.blog-card .blog-date::before{
+  content:"" !important;
+  width:6px !important;
+  height:6px !important;
+  flex:0 0 6px !important;
+  border-radius:999px !important;
+  background:#2dd4bf !important;
+  box-shadow:0 0 0 3px rgba(45,212,191,.12) !important;
+}
+
+.blog-card .blog-meta small{
+  display:inline-flex !important;
+  align-items:center !important;
+  width:auto !important;
+  max-width:none !important;
+  min-width:0 !important;
+  color:#8ba0b6 !important;
+  font-size:12px !important;
+  line-height:1 !important;
+  font-weight:800 !important;
+  white-space:nowrap !important;
+  overflow:visible !important;
+  text-overflow:clip !important;
+}
+
+@media(max-width:1180px){
+  .blog-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  }
+}
+
+@media(max-width:760px){
+  .blog-grid,
+  .blog-listing-grid{
+    grid-template-columns:1fr !important;
+  }
+  .blog-card .blog-meta{
+    gap:8px 12px !important;
   }
 }
 </style>

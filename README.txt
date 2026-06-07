@@ -1,12 +1,10 @@
-Node Tech Solutions blog header and dates fix
+Node Tech Solutions blog card date layout fix
 
 Fixed:
-- Blog listing page header is now visible on the light background.
-- Individual blog post page headers are now visible on the light background.
-- Added publish date to blog listing cards and article pages.
-- Updated BlogPosting schema dates where schema exists.
-
-Publish date used: June 7, 2026
+- Homepage blog card date layout no longer breaks the card.
+- Date badge changed from oversized pill/circle into a compact inline date.
+- Read time no longer gets cut off.
+- Blog images and blog post pages are unchanged.
 
 Pending before deployment:
-- Replace YOUR_FORM_ID in contact.html with your Formspree endpoint.
+- Replace YOUR_FORM_ID in contact.html with your Formspree/Web3Forms endpoint.
